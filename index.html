@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/a8d154e7d8.js" crossorigin="anonymous"></script>
-    
     <script src="main.js" defer></script>
 
     <title>Tic-Tac-Toe</title>
 </head>
+
 <body>
-    <header>Tic-Tac-Toe</header>
+    <header>
+        <h1 class="title">Tic-Tac-Toe</h1>
+    </header>
     <section class="players">
-        <input type="text" id="player1">
-        <input type="text" id="player2">
+        <input type="text" id="player1" placeholder="Player 1">
+        <input type="text" id="player2" placeholder="Player 2">
         <button class="start" id="strBtn">Start</button>
     </section>
     <section class="board hidden">
+        <div class="p1"></div>
+        <div class="p2"></div>
         <div class="gameBoard">
             <div class="box" data-num="0"></div>
             <div class="box" data-num="1"></div>
@@ -30,7 +39,8 @@
             <div class="box" data-num="7"></div>
             <div class="box" data-num="8"></div>
         </div>
-        <button class="restart" id="restBtn">Restart</button>
     </section>
+    <button class="restart hidden" id="restBtn">Restart</button>
 </body>
+
 </html>
