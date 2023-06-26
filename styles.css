@@ -1,4 +1,25 @@
 * {
   box-sizing: border-box;
   margin: 0;
-}/*# sourceMappingURL=styles.css.map */
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.gameBoard {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightblue;
+  width: 675px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.box {
+  width: 225px;
+  height: 225px;
+  border: 2px solid black;
+}

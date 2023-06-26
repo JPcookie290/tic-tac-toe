@@ -9,18 +9,28 @@
     
     <script src="main.js" defer></script>
 
-    <title>Tic-Tak-Toe</title>
+    <title>Tic-Tac-Toe</title>
 </head>
 <body>
-    <header></header>
+    <header>Tic-Tac-Toe</header>
     <section class="players">
         <input type="text" id="player1">
         <input type="text" id="player2">
-        <button class="start" id="strBtn"></button>
+        <button class="start" id="strBtn">Start</button>
     </section>
-    <section class="board">
-        <div class="gameBoard"></div>
-        <button class="restart" id="restBtn"></button>
+    <section class="board hidden">
+        <div class="gameBoard">
+            <div class="box" data-num="0"></div>
+            <div class="box" data-num="1"></div>
+            <div class="box" data-num="2"></div>
+            <div class="box" data-num="3"></div>
+            <div class="box" data-num="4"></div>
+            <div class="box" data-num="5"></div>
+            <div class="box" data-num="6"></div>
+            <div class="box" data-num="7"></div>
+            <div class="box" data-num="8"></div>
+        </div>
+        <button class="restart" id="restBtn">Restart</button>
     </section>
 </body>
 </html>
