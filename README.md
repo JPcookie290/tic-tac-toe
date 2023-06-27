@@ -5,54 +5,77 @@ A game in which two players seek in alternate turns to complete a row, a column,
 ```
 class Player{}
 ```
+
 Creates the different players.
 
 ```
 class Game{}
 ```
+
 Creates the game board as an array.
 
 ```
 createPlayers(player1, player2)
 ```
+
 Uses the class Player funtion to create the 2 players.
 
 ```
 place(x, symbol)
 ```
+
 Places the 2 symbols into the gameboard array.
 
 ```
 win()
 ```
+
 Checks the winning conditions.
 
 ```
 gameDisplay()
 ```
+
 Shows the gameboard and hides the player input.
 
 ```
 winner()
 ```
+
 Displays the winner at the end of the game.
 
 ```
 draw()
 ```
+
 Announces if the game end in a draw.
 
 ```
 names()
 ```
+
 Displays the players names on each side of the gameboard.
+
+```
+removeHandler()
+```
+
+Removes the click event of already filled spaces.
+
+```
+clickPlacer()
+```
+
+Adds a click event to the empty spaces of the gameboard and places the different symbols.
 
 ```
 restart()
 ```
+
 Reloads the page.
 
 ```
 init()
 ```
+
 Starts the game functions.
