@@ -63,7 +63,7 @@ removeHandler()
 Removes the click event of already filled spaces.
 
 ```
-clickPlacer()
+clickPlace()
 ```
 
 Adds a click event to the empty spaces of the gameboard and places the different symbols.

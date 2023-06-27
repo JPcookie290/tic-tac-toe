@@ -92,10 +92,6 @@ function names(name1, name2) {
   player2.textContent = name2;
 }
 
-function removeHandler(div) {
-  div.removeEventListener("click", clickPlace);
-}
-
 function restart() {
   location.reload();
 }
@@ -120,12 +116,11 @@ function restart() {
       gameDisplay();
     }
   });
-  console.log(box, typeof box);
 
   box.forEach((element) => {
     element.addEventListener("click", clickPlace);
   });
-  //
+
   function clickPlace(e) {
     let currentTarget = e.target;
     let currentIndex = currentTarget.dataset.num;
@@ -151,6 +146,10 @@ function restart() {
       }
     }
     removeHandler(currentTarget);
+  }
+
+  function removeHandler(div) {
+    div.removeEventListener("click", clickPlace);
   }
 
   document.querySelector("#restBtn").addEventListener("click", restart);
